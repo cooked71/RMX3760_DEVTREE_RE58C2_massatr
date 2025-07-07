@@ -111,7 +111,7 @@ TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
 
 # DTB and dtb
 BOARD_KERNEL_SEPARATED_DTBO := true
-TARGET_PREBUILT_DTB := /home/cooked/twrp/device/realme/RE58C2/prebuilt/dtb
+TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilt/dtb
 
 # Verified Boot
  BOARD_AVB_ENABLE := true
@@ -132,7 +132,7 @@ TARGET_NO_RECOVERY := true
 TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
 BOARD_MOVE_RECOVERY_RESOURCES_TO_VENDOR_BOOT := true
 BOARD_INCLUDE_RECOVERY_RAMDISK_IN_VENDOR_BOOT := true
-TARGET_RECOVERY_FSTAB := /home/cooked/twrp/device/realme/RE58C2/recovery/root/system/etc/recovery.fstab
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/root/system/etc/recovery.fstab
 
 
 TW_INCLUDE_CRYPTO := true
